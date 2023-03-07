@@ -1,0 +1,28 @@
+{
+  "name": "sassymodal",
+  "version": "1.0.0",
+  "description": "Vanilla JS Modal",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html && cp src/js/plugins/SassyModal.js plugin/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sassyelements/sassymodal.git"
+  },
+  "author": "https://github.com/0xkhan",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/sassyelements/sassymodal/blob/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/sassyelements/sassymodal/issues"
+  },
+  "homepage": "https://github.com/sassyelements/sassymodal#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.2.1",
+    "parcel": "^2.2.1"
+  }
+}
