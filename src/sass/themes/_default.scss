@@ -1,0 +1,97 @@
+// Colors
+$theme-color-primary: #aac6fc;
+$theme-color-secondary: #f6e049;
+$theme-color-tertiary: #e0719e;
+$theme-color-tertiary-light: #eebed3;
+
+// Transitions
+$modal-transition-in: cubic-bezier(0.65, 0.14, 0.14, 0.91);
+$modal-transition-out: cubic-bezier(0.98, 0.03, 0.66, 0.9);
+
+// Axis values
+$modal-transform-y-axis-distance: 3rem;
+
+.modal {
+    &__triggers {
+        margin-top: 7rem;
+
+        display: flex;
+        grid-column-gap: 2rem;
+        justify-content: center;
+    }
+
+    &__backdrop {
+        inset: 0;
+        background: rgba(#000, .2);
+        position: fixed;
+        z-index: 0;
+    }
+
+    &__container {
+        position: fixed;
+        inset: 0;
+        
+        display: flex;
+        justify-content: center;
+
+        opacity: 0;
+        visibility: hidden;
+        
+        transition: opacity linear .2s .4s, visibility linear .1s .5s;
+    }
+
+    &__content {
+        height: 45rem;
+        width: 60rem;
+        background-color: #fff;
+        border-radius: 1.5rem;
+        padding: 2rem;
+        align-self: start;
+        opacity: 0;
+        visibility: hidden;
+        
+        position: relative;
+        z-index: 100;
+        transition: opacity $modal-transition-in .2s .1s, transform $modal-transition-in .2s .1s, visibility linear .1s .2s;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 75%;
+    }
+    
+    .modal-blur {
+        backdrop-filter: blur(6px);
+    }
+
+    .show-modal {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity linear .2s .1s, visibility linear .1s;
+    }
+
+    .show-modal &__content {
+        opacity: 1;
+        visibility: visible;
+
+        transition: opacity $modal-transition-out .2s .3s, transform $modal-transition-out .2s .3s, visibility linear .1s;
+    }
+
+    .fade-in &__content {
+        transform: translate3d(0, calc($modal-transform-y-axis-distance * -1), 0);
+    }
+
+    .fade-out &__content {
+        transform: translate3d(0, $modal-transform-y-axis-distance, 0);
+    }
+    
+    .show-modal &__content {
+        transform: none;
+    }
+
+    .modal-centered &__content {
+        align-self: center;
+    }
+}
