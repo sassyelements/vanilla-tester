@@ -46,9 +46,7 @@ export default class VanillaTester {
      * @param {boolean} isTrue The given parameter will either return true or false
      */
     assert(isTrue) {
-        if (!isTrue) {
-            throw new Error();
-        }
+        if (!isTrue) throw new Error();
     }
 
 }
