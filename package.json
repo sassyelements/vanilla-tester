@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A very simple vanilla JS plugin for unit tests",
   "scripts": {
-    "start": "parcel index.html",
+    "start-old": "parcel index.html",
+    "start": "parcel ./*.html",
     "build": "parcel build index.html && cp src/js/plugins/VanillaTester.js plugin/"
   },
   "repository": {
