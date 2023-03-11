@@ -30,9 +30,9 @@ export default class VanillaTester {
      * @param {string} desc Description or message for the test
      * @param {function} fn Callback function for the test
      */
-    test(desc, fn) {
+    test(desc, fun) {
         try {
-            fn();
+            fun();
             console.log(`%c ${this.options.iconPass} ${desc}`, `${this.stylesPass}`);
         } catch(err)  {
             console.log(`%c ${this.options.iconFail} ${desc}`, `${this.stylesFail}`);
