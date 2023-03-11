@@ -19,7 +19,7 @@ class Ajaxios {
                 fetchRequest,
                 this.#timeout(this.timeoutSeconds)
             ]);
-            const data await response.json();
+            const data = await response.json();
             if (!response.ok) throw new Error(`${data.message} ${response.status}`);
             return data;
         } catch(err) {
@@ -27,3 +27,5 @@ class Ajaxios {
         }
     }
 }
+
+export default new Ajaxios();
