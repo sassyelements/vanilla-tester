@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanilla Tester</title>
-    <meta name="description" content="Vanilla JS modal plugin.">
+    <meta name="description" content="Vanilla JS plugin for unit tests.">
 
     <link rel="stylesheet" href="./src/sass/main.scss">
     <script type="module" src="./src/index.js"></script>
@@ -58,6 +58,19 @@
                     <a class="btn btn--default btn--round" href="#" data-modal-trigger="modal-one">Modal One</a>
                     <a class="btn btn--default" href="#" data-modal-trigger="modal-two">Modal Two</a>
                 </div>
+
+                <!-- TODO Form -->
+                <div class="todo todo__container" style="margin-top: 10rem;">
+                    <h2 class="heading-bold heading-2">Todo List</h2>
+                    <form class="todo__form">
+                        <input type="text" name="todo__input">
+                        <button type="submit">Submit</button>
+                    </form>
+
+                    <!-- TODO List -->
+                    <ul class="todo__list"></ul>
+                </div>
+                
 
                 <!-- Modal One -->
                 <div class="modal__container" data-modal-id="modal-one">

@@ -1,6 +1,6 @@
 import VanillaTester from '../plugins/VanillaTester';
 
-tester = new VanillaTester();
+const tester = new VanillaTester();
 
 tester.test('This test passes', () => {
     tester.assert(1 == 1);
