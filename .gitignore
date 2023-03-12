@@ -3,3 +3,4 @@ dist
 package-lock.json
 .parcel-cache
 .DS_Store
+whyTests.md
