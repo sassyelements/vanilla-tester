@@ -172,7 +172,21 @@ file then you can create a separate HTML file. You can either name it
 I mostly use Webpack and Parcel so my file tree looks like following:
 
 ```
-File Tree
+.
+├── assets
+│   └── se_logo.svg
+├── index.js
+├── js
+│   ├── plugins
+│   └── tests
+└── sass
+    ├── abstracts
+    ├── base
+    ├── components
+    ├── layout
+    ├── main.scss
+    ├── pages
+    └── themes
 ```
 
 **I take following steps to structure my tests:**
