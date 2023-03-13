@@ -112,7 +112,6 @@ properties you're allowed to use.
 </tr>
 <tr>
 <td>
-
 Chrome allows CSS properties with any of the<br/>
 following PREFIXES [Reference](https://github.com/ChromeDevTools/devtools-frontend/blob/5165a7a61b1d10354d560dc72dc6409bf21ea5ae/front_end/console/ConsoleViewMessage.js#L895-L907)
 
@@ -130,10 +129,8 @@ following PREFIXES [Reference](https://github.com/ChromeDevTools/devtools-fronte
 * `-webkit-margin`
 * `-webkit-padding`
 * `-webkit-background`
-
 </td>
 <td>
-
 Firefox allows the following properties [Reference](https://developer.mozilla.org/en-US/docs/Web/API/Console#styling_console_output)
 * `color`
 * `cursor`
@@ -153,7 +150,6 @@ Firefox allows the following properties [Reference](https://developer.mozilla.or
 * `font` and its longhand equivalents
 * `outline` and its longhand equivalents
 * `text-*` properties such as `text-transform`
-
 </td>
 </tr>
 </table>
